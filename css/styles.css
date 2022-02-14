@@ -150,3 +150,107 @@ main{
 	display: flex;
 	justify-content: space-between;
 }
+
+
+/* RESPONSIVE DESIGN */
+
+/* ESCRITORIO GRANDE | 1366px EN ADELANTE */
+@media (min-width: 1200px){
+
+
+}
+
+/* ESCRITORIO MEDIANO O TABLET HORIZONTAL | 1024px */
+@media (max-width: 1199px) and (min-width: 992px){
+
+	body{
+		background-position: left 0 top 37rem
+	}
+
+	.empty-space{
+		right: 10rem;
+		top: 29rem;
+	}
+
+}
+
+/* ESCRITORIO PEQUEÑO O TABLET VERTICAL | 768px */
+@media (max-width: 991px) and (min-width: 768px){
+
+	main{
+		display: flex;
+		flex-direction: column;
+	}
+
+	body{
+		background-image: url('../img/bg-mobile.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size:  100%;
+	}
+
+	.menu{
+		width: 39.7rem;
+	}
+
+	.storage-usage-container{
+		margin: 3rem 0 0 0;
+
+	}
+
+	.empty-space{
+		border-radius: 1rem;
+		top: 66.8rem;
+		right: 34rem;
+
+	}
+
+}
+
+/* MOVIL | 320px */
+@media (max-width: 767px){
+
+	main{
+		display: flex;
+		flex-direction: column;
+	}
+
+	body{
+		background-image: url('../img/bg-mobile.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size:  100%;
+	}
+
+	.menu{
+		width: 14.7rem;
+	}
+
+	.storage-usage-container{
+		margin: 3rem 0 0 0;
+		padding: 2.5rem 3.5rem;
+
+	}
+
+	.progress{
+		width: 23rem;
+	}
+
+	.progress span{
+		width: 18rem;
+	}
+
+	.progress-circle{
+		margin: 0;
+		left: 16.7rem
+	}
+
+	.empty-space{
+		border-radius: 1rem;
+		top: 42rem;
+		right: 8rem;
+
+	}
+
+	
+}
